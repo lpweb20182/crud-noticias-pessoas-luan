@@ -1,0 +1,17 @@
+<h1>Atualizar cadastro de pessoa</h1>
+<br>
+<form class="mt-1" #cadastro="ngForm" (submit)="salvar()">
+  <div *ngIf="pessoa">  
+    <div class="form-group">
+      <label for="nome">Título</label>
+      <input type="text" class="form-control" name="nome" id="nome" [(ngModel)]="pessoa.nome" required>
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" class="form-control" name="email" id="email" [(ngModel)]="pessoa.email" required>
+    </div>
+    <div>
+      <button class="btn btn-success" (click)="editar()">Alterar</button>
+    </div>
+  </div>
+</form>

@@ -10,7 +10,7 @@ import { AutoresService } from '../autores.service';
 export class AdminCadastrarNoticiaComponent implements OnInit {
   titulo = null;
   autores = null;
-  autor = null;
+  autor = {id: null};
   resumo = null;
   conteudo = null;
   data = null;

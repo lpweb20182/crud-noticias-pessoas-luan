@@ -8,6 +8,7 @@
     <tr>
       <th>#</th>
       <th>Título</th>
+      <th>Ações</th>
     </tr>
   </thead>
   <tbody>
@@ -17,6 +18,12 @@
       </td>
       <td>
         {{noticia.titulo}}
+      </td>
+      <td>
+        <div class="mt-2">
+          <a class="btn btn-success btn-sm" [routerLink]="['editar', noticia.id]">Editar</a> |
+          <button type="button" class="btn btn-danger btn-sm" (click)='excluir(noticia.id)'>Excluir</button>
+        </div>
       </td>
     </tr>
   </tbody>
